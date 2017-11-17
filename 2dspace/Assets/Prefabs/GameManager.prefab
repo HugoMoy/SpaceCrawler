@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1952188587595018}
+  m_IsPrefabParent: 1
+--- !u!1 &1952188587595018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4008468521868400}
+  - component: {fileID: 114585691761382322}
+  - component: {fileID: 114223949796947752}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4008468521868400
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952188587595018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.21441455, y: 2.6463013, z: -0.0009765625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114223949796947752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952188587595018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9c3b2d4f9a5c414ba449da8652bf3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardScript: {fileID: 114585691761382322}
+--- !u!114 &114585691761382322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1952188587595018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ecd805e0fc61740a7ea80d5b6d930e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitdown: {fileID: 1687936160990532, guid: db61537ffc75dc6479e0e39fa785aa9c, type: 2}
+  exitup: {fileID: 1206440536016022, guid: 63fd02d71e7eb6b4696a17efe4e5f90d, type: 2}
+  exitleft: {fileID: 1338088698310036, guid: cb66031dbbb021e4893eeba39b3d8c93, type: 2}
+  exitright: {fileID: 1023427683826190, guid: c1ae73ca69c00d2479e628641e0e601a, type: 2}
+  start: {fileID: 1087249997263202, guid: a0ca2dde1565869429b06a89005e63ef, type: 2}
+  allChunks:
+  - {fileID: 1910922995865250, guid: 092b6a52812bf724b8e86386f04feba9, type: 2}
+  - {fileID: 1288972403868848, guid: ed9d691198a1e0c4e8db9e138f3a7235, type: 2}
+  - {fileID: 1588656563093396, guid: 51bda183f3bf76d4a8aa575657ddbbf3, type: 2}
+  - {fileID: 1687936160990532, guid: db61537ffc75dc6479e0e39fa785aa9c, type: 2}
+  - {fileID: 1907787188896418, guid: dcfbb153c9055f147aed61f869c654b5, type: 2}
+  - {fileID: 1087249997263202, guid: a0ca2dde1565869429b06a89005e63ef, type: 2}
+  - {fileID: 1431360233223940, guid: 95c1d91598b239d499fa111f4debd8ec, type: 2}
+  openUpChunks:
+  - {fileID: 1910922995865250, guid: 092b6a52812bf724b8e86386f04feba9, type: 2}
+  - {fileID: 1907787188896418, guid: dcfbb153c9055f147aed61f869c654b5, type: 2}
+  - {fileID: 1777468154937196, guid: 462e139a7857f1a44bb536d2e79e03b3, type: 2}
+  openDownChunks:
+  - {fileID: 1910922995865250, guid: 092b6a52812bf724b8e86386f04feba9, type: 2}
+  - {fileID: 1431360233223940, guid: 95c1d91598b239d499fa111f4debd8ec, type: 2}
+  - {fileID: 1907787188896418, guid: dcfbb153c9055f147aed61f869c654b5, type: 2}
+  - {fileID: 1610492329814738, guid: 3ad1b221d7129cb4abc50369373106fc, type: 2}
+  openLeftChunks:
+  - {fileID: 1288972403868848, guid: ed9d691198a1e0c4e8db9e138f3a7235, type: 2}
+  - {fileID: 1910922995865250, guid: 092b6a52812bf724b8e86386f04feba9, type: 2}
+  - {fileID: 1431360233223940, guid: 95c1d91598b239d499fa111f4debd8ec, type: 2}
+  - {fileID: 1610492329814738, guid: 3ad1b221d7129cb4abc50369373106fc, type: 2}
+  openRightChunks:
+  - {fileID: 1288972403868848, guid: ed9d691198a1e0c4e8db9e138f3a7235, type: 2}
+  - {fileID: 1910922995865250, guid: 092b6a52812bf724b8e86386f04feba9, type: 2}
+  - {fileID: 1431360233223940, guid: 95c1d91598b239d499fa111f4debd8ec, type: 2}
+  - {fileID: 1777468154937196, guid: 462e139a7857f1a44bb536d2e79e03b3, type: 2}
+  endUpChunks:
+  - {fileID: 1430025698170084, guid: 5d9b72d83c6329849aadf55c2e4dc70e, type: 2}
+  endDownChunks:
+  - {fileID: 1011309774817844, guid: 6976fdc735ca8e14b8a48f0e66525f1c, type: 2}
+  endLeftChunks:
+  - {fileID: 1931961842269082, guid: ad00b189b11d0f348a978e2d6297a945, type: 2}
+  endRightChunks:
+  - {fileID: 1926023096553338, guid: 602153c9c186098468563fd681608155, type: 2}
+  outerWallChunks:
+  - {fileID: 1588656563093396, guid: 51bda183f3bf76d4a8aa575657ddbbf3, type: 2}
+  OrientationNextPos: []
+  nextPosition: []
+  columns: 4
+  rows: 4
