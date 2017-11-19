@@ -60,9 +60,14 @@ public class GameManager : MonoBehaviour {
 		
 		//Set doingSetup to false allowing player to move again.
 		doingSetup = false;
+
+        PauseManager.AllowPause(true);
 	}
 	void InitGame(){
 		Debug.Log("Start Init");
+
+        PauseManager.AllowPause(false);
+
 		//While doingSetup is true the player can't move, prevent player from moving while title card is up.
 		doingSetup = true;
             
